@@ -1,0 +1,20 @@
+{
+	"target_resource_handles" : 
+	[
+		"/resources/**", 
+		"/css/**", 
+		"/images/**", 
+		"/js/**", 
+		"/lib/**", 
+		"/fonts/**"
+	],
+	"target_resource_locations" : 
+	[
+		"classpath:/resources/",
+    	"classpath:/static/css/",
+    	"classpath:/static/images/",
+    	"classpath:/static/js/",
+    	"classpath:/static/lib/",
+    	"classpath:/static/fonts/"
+    ]
+}

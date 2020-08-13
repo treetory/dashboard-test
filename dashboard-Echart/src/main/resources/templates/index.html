@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Echart</title>
+<script src="./lib/echarts/echarts.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="./css/chart.css"/>
+
+<link rel="stylesheet" type="text/css" href="./lib/w2ui/w2ui-1.5.rc1.min.css"/>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="./lib/w2ui/w2ui-1.5.rc1.min.js"></script>
+
+<!-- <link rel="stylesheet" type="text/css" href="http://w2ui.com/src/w2ui-1.5.rc1.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://w2ui.com/src/w2ui-1.5.rc1.min.js"></script> -->
+
+<script src="../webjars/sockjs-client/sockjs.min.js"></script>
+<script src="../webjars/stomp-websocket/stomp.min.js"></script>
+
+</head>
+<body>
+	<h2>Echart 연습</h2>
+
+ <div class="chartArea">
+	<div class="chartAreaRow">
+		<div class="left_chart">
+			<span id="main"></span>
+		</div>
+		<div class="middle_chart">
+			<span id="target"></span>
+		</div>
+		<div class="right_chart">
+			<span id="area"></span>
+		</div>
+	</div>
+</div>
+<div style="margin-top: 10px;"></div>
+ <div class="chartArea">
+	<div class="chartAreaRow">
+		<div class="left_chart">
+			<span id="gauge"></span>
+		</div>
+		<div class="middle_chart">
+			<span id="stackedArea"></span>
+		</div>
+		<div class="right_chart">
+			<span id="stackBar"></span>
+		</div>
+	</div>
+</div>
+<div style="margin-top: 10px;"></div>
+<!--  <div class="chartArea">
+	<div class="chartAreaRow">
+		<div id="w2ui_grid"></div>
+	</div>
+</div> -->
+
+<div id="w2ui_grid" style="width: 100%; height: 250px;"></div>
+<div id="label" style="width: 100%; height: 20px;"></div>
+
+
+
+
+</body>
+<script type="text/javascript" src="./js/dashboard.js"></script>
+<script>
+/* $(function () {
+    $('#w2ui_grid').w2grid({
+        name: 'grid',
+        show: {
+        	toolbar: false,
+        	footer: true,
+        	toolbarAdd: false,
+        	toolbarDelete: false,
+        	toolbarSave: false,
+        	toolbarEdit: false,
+        	scroll: true
+        },
+        header: 'List of Names',
+        columns: [
+            { field: 'fname', caption: 'First Name', size: '30%', sortable: true },
+            { field: 'lname', caption: 'Last Name', size: '30%', sortable: true },
+            { field: 'email', caption: 'Email', size: '40%', sortable: true },
+            { field: 'sdate', caption: 'Start Date', size: '120px', sortable: true }
+        ],
+        records: [
+            { recid: 1, fname: "Peter", lname: "Jeremia", email: 'peter@mail.com', sdate: '2/1/2010' },
+            { recid: 2, fname: "Bruce", lname: "Wilkerson", email: 'bruce@mail.com', sdate: '6/1/2010' },
+            { recid: 3, fname: "John", lname: "McAlister", email: 'john@mail.com', sdate: '1/16/2010' },
+            { recid: 4, fname: "Ravi", lname: "Zacharies", email: 'ravi@mail.com', sdate: '3/13/2007' },
+            { recid: 5, fname: "William", lname: "Dembski", email: 'will@mail.com', sdate: '9/30/2011' },
+            { recid: 6, fname: "David", lname: "Peterson", email: 'david@mail.com', sdate: '4/5/2010' },
+            { recid: 1, fname: "Peter", lname: "Jeremia", email: 'peter@mail.com', sdate: '2/1/2010' },
+            { recid: 2, fname: "Bruce", lname: "Wilkerson", email: 'bruce@mail.com', sdate: '6/1/2010' },
+            { recid: 3, fname: "John", lname: "McAlister", email: 'john@mail.com', sdate: '1/16/2010' },
+            { recid: 4, fname: "Ravi", lname: "Zacharies", email: 'ravi@mail.com', sdate: '3/13/2007' },
+            { recid: 5, fname: "William", lname: "Dembski", email: 'will@mail.com', sdate: '9/30/2011' },
+            { recid: 6, fname: "David", lname: "Peterson", email: 'david@mail.com', sdate: '4/5/2010' }
+        ], 
+        onClick: function(event){
+        	var recid = this.get(event.recid);
+        	$('#label').text("이름: "+ recid.fname+ ", 이메일: "+ recid.email);
+        	window.open("http://www.naver.com");
+        }
+    });
+   
+}); */
+</script>
+</html>

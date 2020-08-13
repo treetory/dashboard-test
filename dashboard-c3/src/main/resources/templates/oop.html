@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>C3.js</title>
+    <link rel="stylesheet" href="./lib/c3/c3.min.css"/>
+    <script src="./lib/d3/d3.min.js"></script>
+    <script src="./lib/c3/c3.min.js"></script>
+    <script src="../webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="../webjars/stomp-websocket/stomp.js"></script>
+</head>
+<body>
+<p>Hello World!!!</p>
+<div>
+    <span>
+        <button id="connect">CONNECT!!</button>
+    </span>
+    <span>
+        <button id="start">START!!</button>
+    </span>
+    <span>
+        <button id="stop">STOP!!</button>
+    </span>
+    <span>
+        <button id="disconnect">DISCONNECT!!</button>
+    </span>
+</div>
+<div class="chart_type" id="line"></div>
+<div class="chart_type" id="timeSeries"></div>
+</body>
+<script type="text/javascript" src="./js/dashboard_oop.js"></script>
+</html>
